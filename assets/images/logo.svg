@@ -1,0 +1,35 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="logoBg" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#63a4ff"/>
+      <stop offset="100%" stop-color="#2f6fe0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="96" fill="url(#logoBg)"/>
+
+  <!-- circuit branches fanning up from the W, forking at the outer tips -->
+  <g stroke="#FFFFFF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 118 L100 62"/>
+    <path d="M78 118 L78 86"/>
+    <path d="M122 118 L122 86"/>
+    <path d="M46 116 L38 92 L22 74"/>
+    <path d="M46 116 L38 92 L52 68"/>
+    <path d="M154 116 L162 92 L178 74"/>
+    <path d="M154 116 L162 92 L148 68"/>
+  </g>
+  <g fill="#FFFFFF">
+    <circle cx="100" cy="60" r="6.5"/>
+    <circle cx="78" cy="84" r="6"/>
+    <circle cx="122" cy="84" r="6"/>
+    <circle cx="22" cy="74" r="6"/>
+    <circle cx="52" cy="68" r="6"/>
+    <circle cx="178" cy="74" r="6"/>
+    <circle cx="148" cy="68" r="6"/>
+  </g>
+
+  <!-- bold circuit-style "W" -->
+  <path d="M40 112 L64 160 L82 122 L100 165 L118 122 L136 160 L160 112"
+        fill="none" stroke="#FFFFFF" stroke-width="15"
+        stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

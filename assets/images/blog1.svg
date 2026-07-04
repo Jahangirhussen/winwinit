@@ -1,0 +1,5 @@
+<svg width="400" height="240" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#4285F4"/>
+  <circle cx="200" cy="120" r="70" fill="#FFFFFF" opacity="0.9"/>
+  <text x="200" y="140" font-family="Poppins, Arial, sans-serif" font-size="46" font-weight="800" fill="#4285F4" text-anchor="middle">W</text>
+</svg>
