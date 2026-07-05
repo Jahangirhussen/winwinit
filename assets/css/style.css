@@ -1643,4 +1643,8 @@ section { padding: 90px 0; }
   .blob { display: none; }
   .process-grid { grid-template-columns: 1fr; }
   .process-step::after { display: none; }
+
+  /* Let the background globe show through outside cards on mobile -
+     these two are plain page tints, not real UI components. */
+  .hero, .page-hero { background: none; }
 }
