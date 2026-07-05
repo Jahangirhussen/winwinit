@@ -490,6 +490,16 @@ section { padding: 90px 0; }
   height: 100%;
 }
 
+/* Grid/flex items default to min-width:auto (min-content), which lets
+   a single long word or nowrap run force the track wider than the
+   viewport. min-width:0 lets these shrink and wrap normally instead. */
+.price-card, .case-study-card, .testimonial-card, .team-card,
+.blog-card, .portfolio-item, .subservice-card, .card,
+.case-study-meta > div, .newsletter-form, .newsletter-form input {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .card h3, .card h4 { color: inherit; }
 .card p { color: rgba(255,255,255,0.85); }
 
@@ -965,6 +975,16 @@ section { padding: 90px 0; }
   background: var(--bg-light);
   padding: 64px 0;
   text-align: center;
+}
+
+/* Every inner page hardcodes font-size:42px inline on this h1; inline
+   styles beat stylesheet rules, so override with !important to keep
+   long single words (e.g. "WooCommerce") from blowing out mobile width. */
+@media (max-width: 768px) {
+  .page-hero h1 { font-size: 32px !important; }
+}
+@media (max-width: 480px) {
+  .page-hero h1 { font-size: 26px !important; }
 }
 
 .breadcrumb {
@@ -1609,7 +1629,9 @@ section { padding: 90px 0; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
-  .newsletter-box { flex-direction: column; text-align: center; }
+  .newsletter-box { flex-direction: column; text-align: center; padding: 32px 24px; }
+  .newsletter-form { flex-direction: column; width: 100%; min-width: 0; max-width: 100%; }
+  .newsletter-form input, .newsletter-form button { width: 100%; }
   .cta-section { padding: 40px 24px; }
   .mv-grid { grid-template-columns: 1fr; }
   .stats-bar { padding: 32px 24px; }
