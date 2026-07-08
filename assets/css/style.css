@@ -23,6 +23,161 @@
   --transition: 0.3s ease;
 }
 
+/* ---------- Dark theme: Luxury Black Oil + Gold ---------- */
+html[data-theme="dark"] {
+  --blue: #D4AF37;
+  --text: #FFFFFF;
+  --text-secondary: #B5B5B5;
+  --bg-light: #111111;
+  --border: #2A2A2A;
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme="dark"] body { background: #0A0A0A; }
+html[data-theme="dark"] .site-globe-frame { display: none; }
+html[data-theme="dark"] .navbar { background: #0D0D0D; }
+html[data-theme="dark"] .footer { background: #0D0D0D; }
+
+html[data-theme="dark"] .dropdown-menu,
+html[data-theme="dark"] .dashboard-mock,
+html[data-theme="dark"] .filter-pill,
+html[data-theme="dark"] .case-study-card,
+html[data-theme="dark"] .blog-card,
+html[data-theme="dark"] .subservice-card,
+html[data-theme="dark"] .price-card,
+html[data-theme="dark"] .portfolio-item,
+html[data-theme="dark"] .testimonial-card,
+html[data-theme="dark"] .team-card,
+html[data-theme="dark"] .info-card,
+html[data-theme="dark"] .contact-form-box,
+html[data-theme="dark"] .faq-item,
+html[data-theme="dark"] .category-card,
+html[data-theme="dark"] .card:hover,
+html[data-theme="dark"] .form-group input,
+html[data-theme="dark"] .form-group select,
+html[data-theme="dark"] .form-group textarea,
+html[data-theme="dark"] .newsletter-form input,
+html[data-theme="dark"] #sort-select {
+  background: #171717 !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .form-group input::placeholder,
+html[data-theme="dark"] .form-group textarea::placeholder,
+html[data-theme="dark"] .newsletter-form input::placeholder {
+  color: #909090;
+}
+
+/* Headings always white in dark mode, even where an inline brand colour is set */
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] strong { color: #FFFFFF !important; }
+
+/* ...except headings inside solid-colour cards/buttons, which need to stay white-on-colour, not gold-on-colour */
+html[data-theme="dark"] .card h1,
+html[data-theme="dark"] .card h2,
+html[data-theme="dark"] .card h3,
+html[data-theme="dark"] .card h4 { color: #FFFFFF !important; }
+
+html[data-theme="dark"] .btn-white { color: #0A0A0A !important; }
+html[data-theme="dark"] .btn-primary { color: #0A0A0A !important; }
+
+html[data-theme="dark"] .price-card { background: #171717 !important; }
+
+html[data-theme="dark"] .card-blue,
+html[data-theme="dark"] .card-red,
+html[data-theme="dark"] .card-yellow,
+html[data-theme="dark"] .card-green,
+html[data-theme="dark"] .card-indigo {
+  background: #171717 !important;
+  border-color: #2A2A2A !important;
+}
+html[data-theme="dark"] .card-blue h3, html[data-theme="dark"] .card-blue p,
+html[data-theme="dark"] .card-red h3, html[data-theme="dark"] .card-red p,
+html[data-theme="dark"] .card-yellow h3, html[data-theme="dark"] .card-yellow p,
+html[data-theme="dark"] .card-green h3, html[data-theme="dark"] .card-green p,
+html[data-theme="dark"] .card-indigo h3, html[data-theme="dark"] .card-indigo p,
+html[data-theme="dark"] .card-blue .card-features li, html[data-theme="dark"] .card-blue .card-price,
+html[data-theme="dark"] .card-red .card-features li, html[data-theme="dark"] .card-red .card-price,
+html[data-theme="dark"] .card-yellow .card-features li, html[data-theme="dark"] .card-yellow .card-price,
+html[data-theme="dark"] .card-green .card-features li, html[data-theme="dark"] .card-green .card-price,
+html[data-theme="dark"] .card-indigo .card-features li, html[data-theme="dark"] .card-indigo .card-price {
+  color: #FFFFFF !important;
+}
+html[data-theme="dark"] .card-blue .card-icon, html[data-theme="dark"] .card-blue .card-arrow,
+html[data-theme="dark"] .card-red .card-icon, html[data-theme="dark"] .card-red .card-arrow,
+html[data-theme="dark"] .card-yellow .card-icon, html[data-theme="dark"] .card-yellow .card-arrow,
+html[data-theme="dark"] .card-green .card-icon, html[data-theme="dark"] .card-green .card-arrow,
+html[data-theme="dark"] .card-indigo .card-icon, html[data-theme="dark"] .card-indigo .card-arrow {
+  background: rgba(212,175,55,0.15) !important;
+  color: #D4AF37 !important;
+}
+html[data-theme="dark"] .card-blue .card-btn, html[data-theme="dark"] .card-red .card-btn,
+html[data-theme="dark"] .card-yellow .card-btn, html[data-theme="dark"] .card-green .card-btn,
+html[data-theme="dark"] .card-indigo .card-btn { color: #FFFFFF !important; border-color: #2A2A2A !important; }
+
+html[data-theme="dark"] .card-blue:hover,
+html[data-theme="dark"] .card-red:hover,
+html[data-theme="dark"] .card-yellow:hover,
+html[data-theme="dark"] .card-green:hover,
+html[data-theme="dark"] .card-indigo:hover {
+  background: #171717 !important;
+  border-color: #D4AF37 !important;
+}
+html[data-theme="dark"] .card-blue:hover p,
+html[data-theme="dark"] .card-red:hover p,
+html[data-theme="dark"] .card-yellow:hover p,
+html[data-theme="dark"] .card-green:hover p,
+html[data-theme="dark"] .card-indigo:hover p,
+html[data-theme="dark"] .card:hover h3,
+html[data-theme="dark"] .card:hover h4,
+html[data-theme="dark"] .card:hover .card-features li,
+html[data-theme="dark"] .card:hover .card-price,
+html[data-theme="dark"] .card:hover .card-btn { color: #FFFFFF !important; }
+html[data-theme="dark"] .card:hover .card-icon,
+html[data-theme="dark"] .card:hover .card-arrow { background: #D4AF37 !important; color: #0A0A0A !important; }
+
+html[data-theme="dark"] .card:hover,
+html[data-theme="dark"] .case-study-card:hover,
+html[data-theme="dark"] .blog-card:hover,
+html[data-theme="dark"] .portfolio-item:hover,
+html[data-theme="dark"] .price-card:hover,
+html[data-theme="dark"] .testimonial-card:hover,
+html[data-theme="dark"] .team-card:hover,
+html[data-theme="dark"] .category-card:hover {
+  border-color: #D4AF37 !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
+
+html[data-theme="dark"] .category-card.active { background: #D4AF37 !important; color: #0A0A0A !important; }
+
+html[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: inline; }
+.theme-toggle .icon-moon { display: none; }
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+.theme-toggle:hover { border-color: var(--blue); }
+
 /* ---------- Reset ---------- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -56,6 +211,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 section { padding: 90px 0; }
+
+#projects { padding-bottom: 30px; }
+#case-studies { padding-top: 30px; }
+#categories { padding-bottom: 20px; }
+#latest { padding-top: 30px; }
 
 .section-tag {
   display: inline-block;
@@ -496,11 +656,14 @@ section { padding: 90px 0; }
    a single long word or nowrap run force the track wider than the
    viewport. min-width:0 lets these shrink and wrap normally instead. */
 .price-card, .case-study-card, .testimonial-card, .team-card,
-.blog-card, .portfolio-item, .subservice-card, .card,
+.blog-card, .portfolio-item, .subservice-card, .card, .category-card,
 .case-study-meta > div, .newsletter-form, .newsletter-form input {
   min-width: 0;
   overflow-wrap: anywhere;
 }
+
+.category-pills { flex-wrap: wrap; }
+.category-card { flex: 1 1 140px; max-width: 220px; }
 
 .card h3, .card h4 { color: inherit; }
 .card p { color: rgba(255,255,255,0.85); }
@@ -527,6 +690,9 @@ section { padding: 90px 0; }
 
 .card-green { background: var(--green); border-color: var(--green); }
 .card-green:hover, .card-green:hover p { color: var(--green); }
+
+.card-indigo { background: #2f6fe0; border-color: #2f6fe0; }
+.card-indigo:hover, .card-indigo:hover p { color: #2f6fe0; }
 
 .card-icon {
   width: 56px;
@@ -633,6 +799,7 @@ section { padding: 90px 0; }
 /* ---------- Portfolio ---------- */
 .portfolio-item {
   border-radius: var(--radius);
+  border: 1px solid var(--border);
   overflow: hidden;
   position: relative;
   background: var(--bg-light);
@@ -832,6 +999,8 @@ section { padding: 90px 0; }
   min-width: 140px;
 }
 .category-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-sm); border-color: var(--blue); color: var(--blue); }
+.category-card.active { background: var(--blue); border-color: var(--blue); color: var(--white); }
+.category-card.active .cat-count { color: rgba(255,255,255,0.85); }
 .category-card .cat-count { display: block; font-weight: 500; font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
 
 .testimonial-quote {
@@ -978,6 +1147,8 @@ section { padding: 90px 0; }
   padding: 64px 0;
   text-align: center;
 }
+
+.page-hero p { overflow-wrap: anywhere; max-width: 520px; margin-left: auto; margin-right: auto; }
 
 /* Every inner page hardcodes font-size:42px inline on this h1; inline
    styles beat stylesheet rules, so override with !important to keep
@@ -1150,6 +1321,7 @@ section { padding: 90px 0; }
 .card-green .card-btn:hover { background: var(--green); color: var(--white) !important; }
 .card-yellow .card-btn:hover { background: var(--yellow); color: var(--white) !important; }
 .card-red .card-btn:hover { background: var(--red); color: var(--white) !important; }
+.card-indigo .card-btn:hover { background: #2f6fe0; color: var(--white) !important; }
 
 .card:hover .card-btn { border-color: currentColor; }
 
@@ -1247,8 +1419,12 @@ section { padding: 90px 0; }
   .pricing-grid-4 { grid-template-columns: repeat(2, 1fr); }
 }
 
+@media (max-width: 768px) {
+  .pricing-grid, .pricing-grid-4 { grid-template-columns: 1fr !important; }
+}
+
 .price-card {
-  background: var(--white);
+  background: linear-gradient(180deg, var(--accent-soft, rgba(66,133,244,0.06)), var(--white) 45%);
   border: 2px solid var(--border);
   border-radius: var(--radius);
   padding: 44px 36px;
@@ -1613,7 +1789,7 @@ section { padding: 90px 0; }
   .service-block:nth-child(even) .service-text { order: unset; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
-  .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .pricing-grid-4 { grid-template-columns: repeat(2, 1fr); }
   .price-card.featured { transform: none; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }

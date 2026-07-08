@@ -192,6 +192,10 @@ document.addEventListener('DOMContentLoaded', function () {
      section, drawn progressively with scroll, with a rocket marker that
      travels along it (both scrolling down and back up). ---- */
   (function () {
+    var path = window.location.pathname;
+    var isHome = path === '/' || path.endsWith('/index.html') || path === '/winwinit' || path.endsWith('/winwinit/');
+    if (!isHome) return;
+
     var SEGMENT_STEP = 180;
     var AMPLITUDE = 35;
     var COLORS = ['#4285F4', '#0F9D58', '#F4B400', '#DB4437'];
